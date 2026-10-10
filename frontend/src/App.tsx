@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { FormEvent, ReactNode } from 'react'
 import { Activity, ArrowUpRight, Check, CheckCheck, ChevronRight, CircleHelp, Command, FolderKanban, LayoutDashboard, LogOut, Plus, ShieldCheck, Sparkles, X } from 'lucide-react'
-import { Dashboard, Project, WorkItem, request } from './api'
-
+import { request } from './api'
+import type { Dashboard, Project, WorkItem } from './api'
 const emptyStats:Dashboard = { projects:0, work_items:0, completed_items:0 }
 type AuthMode = 'login' | 'register'
 
